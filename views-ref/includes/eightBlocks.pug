@@ -1,0 +1,11 @@
+table(class=leng)
+	each day, key in data.days
+		tr 
+			td 
+				span !{textBlock.eightBlocks[key]}
+		tr
+			each block in day.blocks
+				td 
+					img(src=tempImg[block.cover])
+					h1= block.title
+					p= block.desc

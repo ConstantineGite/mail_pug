@@ -6,6 +6,7 @@ table(class=leng)
 		tr
 			each block in day.blocks
 				td 
-					img(src=tempImg[block.cover])
-					h1= block.title
-					p= block.desc
+					a(href=block.desc.url)
+						img(src=tempImg[block.cover])
+						h1= block.title
+						p= block.desc.text
